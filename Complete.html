@@ -1,0 +1,44 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+    <title>Complete</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/stubparams.js"></script>
+    <script type="text/javascript" src="js/installparams.js"></script>
+    <script type="text/javascript" src="js/external.js"></script>
+    <script type="text/javascript" src="js/contents.js"></script>
+    <style>
+    #center_content {
+        background:url(images/centerImg.png) no-repeat center;
+    }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            if (isSilentlyLaunch()) {
+                finish();
+            }
+        });
+    </script>
+</head>
+<body>
+<div id="main_body">
+    <div class="header_bar" onmousedown="dragWindow(this)">
+        <img id="header_logo_img" class="header_logo" src="images/header_logo.png" onmousedown="dragWindow(this)">
+        <button id="header_close_img" class="header_close" onclick="finish()"></button>
+    </div>
+    <div id="center_content">
+        <div class="contentDiv conter_div">
+             <h1 class="lang" text="finishDescriptionTitle"></h1>
+            <label class="content lang" text="finishDescription"></label>
+        </div>
+    </div>
+    <div class="buttonDiv">
+        <button class="lang" text="finishButtonText" onclick="finish()"></button>
+    </div>
+</div>
+</body>
+</html>
