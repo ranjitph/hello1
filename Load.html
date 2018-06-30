@@ -1,0 +1,32 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/stubparams.js"></script>
+    <script type="text/javascript" src="js/installparams.js"></script>
+    <script type="text/javascript" src="js/external.js"></script>
+    <script type="text/javascript" src="js/contents.js"></script>
+    <script type="text/javascript">
+        if (environmentCheck()) {
+            notifyFinalStatus(FinalStatus.NotStart);
+            if (isSilentlyLaunch()) {
+                hideCompletely();
+            }
+            manageShortcut(true);
+            setWindowSize(647, 505);
+            setProductProperty();
+            gotoPage("Welcome.html");
+        } else {
+            close();
+        }
+    </script>
+</head>
+<body>
+    <h1>JavaScript is disabled.</h1>
+    Please turn on the IE setting or allow JS running to complete the installation.
+</body>
+</html>
